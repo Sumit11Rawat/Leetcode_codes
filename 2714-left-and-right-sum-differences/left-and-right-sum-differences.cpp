@@ -17,11 +17,11 @@ public:
             //      a=sum-nums[i];
             //     ans.push_back(a);
             // }
-            if(i==n-1){
-                int a=sum-nums[i];
-                ans.push_back(a);
-            }
-            else{
+            // if(i==n-1){
+            //     int a=sum-nums[i];
+            //     ans.push_back(a);
+            // }
+            // else{
                 int left=0;
                 int right=0;
                 for(int j=0;j<i;j++){
@@ -32,7 +32,7 @@ public:
                 }
                 a=abs(left-right);
                 ans.push_back(a);
-            }
+            // }
         }
         return ans;
     }
