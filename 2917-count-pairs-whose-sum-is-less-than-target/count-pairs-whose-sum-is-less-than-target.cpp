@@ -3,13 +3,21 @@ public:
     int countPairs(vector<int>& arr, int target) {
         int count=0;
         int n=arr.size();
-        for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
-                if(arr[i]+arr[j]<target){
-                    count++;
-                }
+        int low=0;
+        sort(arr.begin(),arr.end());
+        int ans=0;
+        int high=n-1;
+        while(low<high){
+            if(arr[low]+arr[high]<target){
+                ans=ans+(high-low);
+                low++;
+            }
+            else{
+                // low++;
+                high--;
             }
         }
-        return count;
+        return ans;
     }
 };
+// -1 1 1 2 3
