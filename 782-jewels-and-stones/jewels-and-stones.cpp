@@ -16,11 +16,11 @@ public:
     //        }
     //    }
     int n=jewels.size();
-    for(auto i:jewels){
-        if(m2[i]){
-            ans+=m2[i];
-        }
-    }
+   for(int i=0;i<n;i++){
+       if(m2[jewels[i]]){
+           ans+=m2[jewels[i]];
+       }
+   }
         return ans;
     }
 };
