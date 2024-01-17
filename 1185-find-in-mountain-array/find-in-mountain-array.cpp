@@ -31,7 +31,7 @@ public:
             }
         }
          i=0;
-         j=ans;
+         j=ans-1;
         
         while(i<=j){
            int midd=i+(j-i)/2;
@@ -46,7 +46,7 @@ public:
                 i=midd+1;
             }
         }
-        i=ans+1;
+        i=ans;
          j=arr.length()-1;
         
         while(i<=j){
