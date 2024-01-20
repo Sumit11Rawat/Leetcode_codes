@@ -7,8 +7,8 @@ vector<int>count(vector<int>&arr,int n){
     }
     arr.clear();
     for(auto it:m){
-        int count=it.second;
-        while(count--){
+      
+        while(it.second--){
             arr.push_back(it.first);
         }
     }
@@ -26,6 +26,8 @@ vector<int>count(vector<int>&arr,int n){
         //     maxi=max(maxi,nums[i+1]-nums[i]);
         // }
         // return maxi;
+
+        // using countsort
         int maxi=0;
         if(nums.size()<=1){
             return 0;
