@@ -5,7 +5,7 @@ public:
         int i=0;
         int j=0;
         int count=0;
-        int ans=0;
+        int ans=1;
         if(s.size()==0){
             return 0;
         }
@@ -22,10 +22,10 @@ public:
                 }
                 // m[s[j]]++;
             }
-            ans=max(ans,j-i+1);
+            ans=max(ans,j-i);
         }
 
 
-return ans-1;
+return ans;
     }
 };
