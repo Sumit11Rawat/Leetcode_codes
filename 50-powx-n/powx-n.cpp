@@ -13,6 +13,8 @@ public:
                 // to being odd
                 // for ex 2^5 here it can be written as 2^2.2
                 // that extra 2 is what ans is actually storing
+                // remember that at last when n==1 then power will be odd then eventually all the even  power will 
+                // be multiplied to the left out giving us our final ans
                  ans*=x;
                  n--;
             }
