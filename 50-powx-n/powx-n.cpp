@@ -9,6 +9,10 @@ public:
                 n=n/2;
             }
             else{
+                // in ans we are actually storing all the odd power no that is always left out due 
+                // to being odd
+                // for ex 2^5 here it can be written as 2^2.2
+                // that extra 2 is what ans is actually storing
                  ans*=x;
                  n--;
             }
