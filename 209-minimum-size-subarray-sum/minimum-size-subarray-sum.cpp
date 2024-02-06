@@ -18,20 +18,12 @@ public:
                 }
                 
                 j++;
-                // if(j>=nums.size()&&){
-                //     j=nums.size()-1;
-                //     // flag=true;
-                // }
+                
                 count++;
             }
             if(sum>=target){
                if(j>=nums.size()){
-                    // if(i==0){
-                    // sum-=nums[i];
-                    // // count--;
-                    // // ans=nums.size();
-                    // // break;
-                    // }
+                    
                     
                     j=nums.size()-1;
                     flag=true;
