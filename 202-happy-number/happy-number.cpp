@@ -4,6 +4,8 @@ public:
         if(n==1){
             return true;
         }
+        // note -->this condition is also self sufficient to evaluate false condition
+        // by observation
     //    if(n==4){
     //        return false;
     //    }
@@ -19,16 +21,16 @@ public:
                 ans+=(n%10)*(n%10);
                 n=n/10;
             }
-            // m[ans]++;
+        
             return chk(ans,m);
         
         
-    //    return false;
+  
     }
     bool isHappy(int n){
-        // int a=n;
+        
         unordered_map<int,int>m;
-        // m[n]++;
+        
          if(chk(n,m)){
              return true;
          }
