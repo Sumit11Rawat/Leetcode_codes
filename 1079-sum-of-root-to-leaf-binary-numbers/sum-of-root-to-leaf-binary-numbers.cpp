@@ -29,7 +29,7 @@ void chk(TreeNode* root,int& ans,string s){
     if(root->left==NULL&&root->right==NULL){
         s+=to_string(root->val);
         ans+=find(s);
-        return ;
+    
     }
     
     s+=to_string(root->val);
