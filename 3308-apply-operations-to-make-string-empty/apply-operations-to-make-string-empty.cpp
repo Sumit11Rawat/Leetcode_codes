@@ -5,7 +5,10 @@ public:
          int maxi=INT_MIN;
         for(int i=0;i<s.size();i++){
             m[s[i]]++;
-            maxi=max(maxi,m[s[i]]);
+            
+        }
+        for(auto i:m){
+            maxi=max(maxi,i.second);
         }
        
         cout<<maxi<<endl;
