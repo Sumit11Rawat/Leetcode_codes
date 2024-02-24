@@ -1,8 +1,6 @@
 class Solution {
 public:
     int myAtoi(string s) {
-        
-       
         int k=0;
         while(k<s.size()){
             if(s[k]==' '){
@@ -15,9 +13,6 @@ public:
         string ans="";
         bool u=false;
         for(int i=k;i<s.size();i++){
-            // if(s[i]==' '&&u==true){
-            //     ans+=' ';
-            // }
             if(s[i]>='a'&&s[i]<='z'||s[i]=='.'||s[i]==' '){
                 break;
             }
@@ -31,9 +26,6 @@ public:
             }
             
         }
-        cout<<ans<<endl;
-        
-    //    long long fans=0;
        bool chk1=false;
        bool chk2=false;
       for(int i=0;i<ans.size();i++){
@@ -47,10 +39,6 @@ public:
           
         
         }
-        // if(chk1&&chk2){
-        //     return 0;
-        // }
-
        long long temp1=0;
        for(int i=0;i<ans.size();i++){
            if(ans[i]=='+'||ans[i]=='-'){
@@ -99,15 +87,10 @@ public:
                    temp2=INT_MIN;
                    return temp2;
                }
-               
-               
-            //    cout<<endl;
-            //    cout<<temp2;
            }
                    }
                
                }
-            //    cout<<endl;
            if(chk1){
                if(-temp2<INT_MIN){
                    temp2=INT_MIN;
@@ -116,8 +99,6 @@ public:
                else{
                    temp2=-temp2;
                }
-            //    cout<<endl;
-            //    cout<<temp2;
            }
            if(chk2){
                if(temp2>INT_MAX){
