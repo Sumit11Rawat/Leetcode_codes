@@ -2,18 +2,18 @@ class Solution {
 public:
     bool isNStraightHand(vector<int>& ans, int a) {
       
-        if(a==ans.size()){
-            sort(ans.begin(),ans.end());
-            for(int i=1;i<ans.size();i++){
-                if(ans[i-1]==ans[i]){
-                    return false;
-                }
-                if(ans[i-1]!=ans[i]-1){
-                    return false;
-                }
-            }
-            return true;
-        }
+        // if(a==ans.size()){
+        //     sort(ans.begin(),ans.end());
+        //     for(int i=1;i<ans.size();i++){
+        //         if(ans[i-1]==ans[i]){
+        //             return false;
+        //         }
+        //         if(ans[i-1]!=ans[i]-1){
+        //             return false;
+        //         }
+        //     }
+        //     return true;
+        // }
         int sum=0;
         unordered_map<int,int>m;
         for(int i=0;i<ans.size();i++){
@@ -27,7 +27,6 @@ public:
         for(auto i:p){
             sum+=i.second;
         }
-        // int temp=0;
         int chk=0;
         int temp=0;
         int i=0;
