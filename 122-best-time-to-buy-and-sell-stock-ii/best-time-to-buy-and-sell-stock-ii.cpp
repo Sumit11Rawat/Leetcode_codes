@@ -13,16 +13,16 @@ public:
                 return 0;
             }
         }
-        int mini=INT_MAX;
-        int ans=0;
-        for(int i=0;i<prices.size();i++){
-            mini=min(mini,prices[i]);
-         if(prices[i]>mini){
-                ans=max(ans,prices[i]-mini);
+        // int mini=INT_MAX;
+        // int ans=0;
+        // for(int i=0;i<prices.size();i++){
+        //     mini=min(mini,prices[i]);
+        //  if(prices[i]>mini){
+        //         ans=max(ans,prices[i]-mini);
             
-        }
-        }
-        cout<<ans<<endl;;
+        // }
+        // }
+        // cout<<ans<<endl;;
         int chk=0;
         int temp=0;
         int i=0;
@@ -52,6 +52,7 @@ public:
             }
         }
         cout<<temp;
-        return max(temp,ans);
+        // return max(temp,ans);
+        return temp;
     }
 };
