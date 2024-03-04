@@ -43,27 +43,10 @@ public:
       break;
     }
    ans--;
-//   for(int i=k;i<tokens.size();i++){
       power+=tokens[k];
-//   }
 
-//    for(int i=j+1;i<tokens.size();i++){
-//             if(power>=tokens[i]){
-//                 power-=tokens[i];
-//                 // temp++;
-//                 ans++;
-//                 // j=
-//             }
-//             // if(i==k){
-//             //     t=true;
-//             //     break;
-//             // }
-//         }
-//         if(t){
-//             break;
-//         }
-        chk=max(ans,chk);
-        cout<<chk<<endl;
+        
+    
        k--;
     j++;
     
