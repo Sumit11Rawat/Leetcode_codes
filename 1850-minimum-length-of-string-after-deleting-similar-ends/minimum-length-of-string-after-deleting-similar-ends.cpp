@@ -11,28 +11,20 @@ public:
                if(i>=j){
                    break;
                }
-            //    if(s[i-1]==s[i]){
-            //        i++;
-            //    }
             while(s[i-1]==s[i]&&i<s.size()){
                 i++;
             }
             if(i==s.size()){
-                // if(s.size()%2==0){
-                //     return 1;
-                // }
-                // else{
-                //     return 0;
-                // }
+              
                 return 0;
             }
-            while(s[j+1]==s[j]&&j!=i){
+            while(s[j+1]==s[j]){
                 j--;
             }
             if(j<=i){
               break;
             }
-            // j--;
+            
            }
            else{
                break;
