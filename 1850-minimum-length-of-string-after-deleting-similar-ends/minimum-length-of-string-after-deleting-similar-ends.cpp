@@ -11,7 +11,7 @@ public:
                if(i>=j){
                    break;
                }
-            while(s[i-1]==s[i]&&i<s.size()){
+            while(s[i-1]==s[i]){
                 i++;
             }
             if(i==s.size()){
