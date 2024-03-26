@@ -27,9 +27,7 @@ public:
                 chk=i;
             }
         
-            if(i>=nums.size()-1){
-            return true;
-             }
+          
        
         }
         
