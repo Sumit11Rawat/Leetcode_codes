@@ -11,21 +11,22 @@
 class Solution {
 public:
     ListNode* mergeInBetween(ListNode* list1, int a, int b, ListNode* list2) {
-    ListNode* temp=list1;
-    for(int i=0;i<a-1;i++){
-        temp=temp->next;
-    }
-    
-    ListNode* s=list1;
-    for(int i=0;i<b;i++){
-        s=s->next;
-    }
-   
-    temp->next=list2;
-    while(list2->next!=NULL){
-        list2=list2->next;
-    }
-    list2->next=s->next;
-    return list1;
+        ios_base::sync_with_stdio(0);
+        cin.tie(0);
+        cout.tie(0);
+        ListNode* pre=list1,*curr=list1;
+        for(int i=0;i<a-1;i++){
+            pre=pre->next;
+        }
+        for(int i=0;i<=b;i++){
+            curr=curr->next;
+        }
+        ListNode * t=list2;
+        while(t->next){
+            t=t->next;
+        }
+        pre->next=list2;
+        t->next=curr;
+        return list1;
     }
 };
