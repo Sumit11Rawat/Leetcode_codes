@@ -14,7 +14,7 @@ public:
         for(auto i:m){
             cout<<i.first<<" "<<i.second<<endl;
         }
-       for(int i=1;i<=k/2;i++){
+       for(int i=1;i<k;i++){
         if(m[i]!=m[k-i]){
              cout<<i<<endl;
             return false;
