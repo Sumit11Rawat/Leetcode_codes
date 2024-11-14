@@ -12,7 +12,7 @@ bool binary_search(vector<int>&nums,int mid,int n){
 }
     int minimizedMaximum(int n, vector<int>& quantities) {
         //  to minimise maximum
-        // binary search all the val from 1 to 10^5
+        // binary search all the val from 1 to 10^5(or last max val in vector)
        
         sort(quantities.begin(),quantities.end());
 
@@ -24,6 +24,7 @@ bool binary_search(vector<int>&nums,int mid,int n){
             int mid=(i+j)/2;
 
             if(binary_search(quantities,mid,n)){
+                // keep track of the min val of mid 
                 ans=min(ans,mid);
                 j=mid-1;
             }
