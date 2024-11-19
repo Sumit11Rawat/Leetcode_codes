@@ -45,7 +45,6 @@ public:
            
            
             if(temp==0){
-                cout<<i<<" "<<pref[i+1]-pref[i-k+1]<<endl;
                 maxi=max(maxi,pref[i+1]-pref[i-k+1]);
             }
            
